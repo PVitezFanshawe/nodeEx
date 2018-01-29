@@ -7,9 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "TVR",
+  "author": "Peter Vitez",
   "license": "MIT",
   "dependencies": {
     "express": "^4.16.2"
-  }
+  },
+  "devDependencies": {}
 }
