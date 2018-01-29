@@ -16,6 +16,11 @@ const server = app.listen(3000, () => {
 
 io.attach(server);
 
-io.on('connection', ()=>{
+io.on('connection', (socket)=>{
   console.log('a user has connected...');
+  io.emit('conectMsg',{ for: 'everyone', msg: `${socket.id} is here!`});
+
+  socket.on('disconnect', ()=> {
+    console.log('a user has disconnected')
+  });
 });

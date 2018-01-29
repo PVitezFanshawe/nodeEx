@@ -9,6 +9,5 @@ router.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, '../views/index.html'))
   });
 
-  router.post()
 
   module.exports = router;
