@@ -6,7 +6,7 @@ const path = require('path');
 
 
 router.get('/contact', (req, res) => {
-    res.sendFile(__dirname + '/contact.html')
+    res.sendFile(path.resolve(__dirname, '../views/contact.html'))
   });
 
   module.exports = router;

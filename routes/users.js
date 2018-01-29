@@ -6,7 +6,7 @@ const path = require('path');
 
 
 router.get('/users', (req, res) => {
-    res.sendFile(__dirname + '/users.html')
+    res.sendFile(path.resolve(__dirname, '../views/users.html'))
   });
 
   module.exports = router;
